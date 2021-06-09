@@ -1,0 +1,385 @@
+@import 'node_modules/hds-design-tokens/lib/all.scss';
+:root {
+  --content-width: 1200px;
+}
+.edit-post-visual-editor.editor-styles-wrapper {
+  background-color: #fafafb;
+}
+.edit-post-visual-editor__post-title-wrapper {
+  opacity: 0.5;
+  border-bottom: 1px solid grey;
+}
+.editor-post-title__input {
+  font-size: 4rem;
+}
+.collapse-list {
+  padding: 1rem;
+  border: 2px solid lightgrey;
+}
+.collapse {
+  padding: 1rem;
+  border: 2px solid grey;
+}
+
+.playbook__infobox {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2.3rem;
+  h4 {
+    text-align: center;
+  };
+  .wp-block-separator {
+    width: 80%;
+    height: 2px;
+    margin: 2rem auto;
+    background: $color-copper-dark;
+    &::before {
+      display: none;
+    };
+    &::after {
+      display: none;
+    };
+  };
+  .wp-block-buttons {
+    align-self: center;
+  };
+  .wp-block-button.playbook__button--arrow {
+    &:after {
+      content: " >";
+      position: relative;
+    };
+  };
+  .wp-block-button__link {
+    border: none;
+  };
+}
+
+.align__self--right {
+  align-self: flex-end;
+  text-align: right;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+span.pelikirja-text {
+  display: inline-block;
+  background-image: url(https://eqsign.fi/test/wp-content/uploads/2021/01/badge.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 4.3em;
+  height: 2.1em;
+  padding-top: 0.4em;
+}
+@font-face {
+  font-family: 'HelsinkiGrotesk-Regular';
+  src: url('assets/fonts/HelsinkiGrotesk-Regular.eot'); /* IE9 Compat Modes */
+  src: url('assets/fonts/HelsinkiGrotesk-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('assets/fonts/HelsinkiGrotesk-Regular.woff2') format('woff2'), /* Modern Browsers */
+      url('assets/fonts/HelsinkiGrotesk-Regular.woff') format('woff'), /* Modern Browsers */
+      url('assets/fonts/HelsinkiGrotesk-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+      url('assets/fonts/HelsinkiGrotesk-Regular.svg') format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelsinkiGrotesk-Bold';
+  src: url('assets/fonts/HelsinkiGrotesk-Bold.eot'); /* IE9 Compat Modes */
+  src: url('assets/fonts/HelsinkiGrotesk-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('assets/fonts/HelsinkiGrotesk-Bold.woff2') format('woff2'), /* Modern Browsers */
+      url('assets/fonts/HelsinkiGrotesk-Bold.woff') format('woff'), /* Modern Browsers */
+      url('assets/fonts/HelsinkiGrotesk-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+      url('assets/fonts/HelsinkiGrotesk-Bold.svg') format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  &.rich-text.block-editor-rich-text__editable {
+    font-family: "HelsinkiGrotesk-Bold",Georgia,Times,Times New Roman,serif;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 8px;
+    letter-spacing: normal;
+  }
+}
+
+p, li {
+  font-family: "HelsinkiGrotesk-Regular",Georgia,Times,Times New Roman,serif;
+  margin-block-start: 0;
+  margin-block-end: 24px;
+  font-size: 16px;
+  line-height: $lineheight-m;
+  &.rich-text.block-editor-rich-text__editable {
+    font-family: "HelsinkiGrotesk-Regular",Georgia,Times,Times New Roman,serif;
+    margin-block-start: 0;
+    margin-block-end: 24px;
+    font-size: 16px;
+  }
+}
+
+h2.rich-text.block-editor-rich-text__editable { font-size: 36px; }
+h3.rich-text.block-editor-rich-text__editable { font-size: 24px; }
+h4.rich-text.block-editor-rich-text__editable { font-size: 20px; }
+
+.hero {
+  p, li {
+    font-family: "HelsinkiGrotesk-Regular",Georgia,Times,Times New Roman,serif;
+    margin-block-start: 0;
+    margin-block-end: 24px;
+    font-size: 20px;
+    &.rich-text.block-editor-rich-text__editable {
+      font-family: "HelsinkiGrotesk-Regular",Georgia,Times,Times New Roman,serif;
+      margin-block-start: 0;
+      margin-block-end: 24px;
+      font-size: 20px;
+    }
+  }
+}
+
+.fontsize-body-l.rich-text.block-editor-rich-text__editable { font-size: 18px; }
+.fontsize-body-xl.rich-text.block-editor-rich-text__editable { font-size: 20px; }
+.fontsize-list-xl.rich-text.block-editor-rich-text__editable li { font-size: 20px; }
+
+.ingress.rich-text.block-editor-rich-text__editable { font-size: 20px; }
+
+.playbook__infoboxes {
+  .playbook__infobox {
+    display: inline-flex;
+    flex-direction: column;
+    // padding: 2.3rem;
+    // padding-top: 4.5rem;
+    padding-bottom: 23px;
+    border: 2px solid $color-fog-medium-light;
+    
+    .wp-block-group:first-of-type { 
+      height: 100%; 
+      .wp-block-group__inner-container { 
+        height: 100%; 
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .wp-block-buttons:last-child {
+      margin-top: auto;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, ul, .wp-block-buttons {
+      padding-left: 23px;
+      padding-right: 23px;
+    }
+    h4 {
+      text-align: center;
+    };
+    .wp-block-separator {
+      width: 160px;
+      max-width: 160px;
+      height: 2px;
+      margin: 20px auto;
+      background: $color-fog!important;
+      opacity: 1;
+      &::before {
+        display: none;
+      };
+      &::after {
+        display: none;
+      };
+    };
+    .wp-block-buttons {
+      align-self: center;
+    };
+    .wp-block-button.playbook__button--arrow {
+      &:after {
+        content: "\f344";
+        color: $color-coat-of-arms-dark;
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+        font: normal 24px/1 'dashicons';
+        margin-left: 0.2em;
+        vertical-align: middle;
+      }
+    };
+    .wp-block-button__link {
+      border: none;
+    };
+  }
+}
+
+.steps {
+  background-image: url("./assets/images/steps-bg.svg");
+  background-color: #E8F3FC;
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 22%;
+  .wp-block-column {
+    border-right: 1px solid;
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+.collapse-list .collapse .collapse-content p, .collapse-list .collapse .collapse-content li {
+  font-size: 20px;
+}
+
+
+.playbook-card, .card {
+  background-color: white;
+  // border: 2px solid $color-fog-medium-light;
+  max-width: 100%;
+  &--img-left {
+    background-size: 75%;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  &--img-right {
+    background-size: 75%;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  &__text {
+    background-color: white;
+    margin: 5.6rem 1.6rem 6.2rem 0;
+    padding: 4rem;
+  }
+}
+
+
+.internal-links {
+  text-align: center; 
+  margin: 2rem auto;
+  margin-block-start: 2rem;
+  margin-block-end: 2rem;
+  a {
+    display: inline-block;
+    margin: 0 9px;
+    font-size: 20px;
+    font-size: 2px;
+    font-weight: 700;
+  }
+}
+
+.playbook__button--arrow {
+  &:after {
+    content: "\f344";
+    color: $color-coat-of-arms-dark;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font: normal 24px/1 'dashicons';
+    margin-left: 0.2em;
+    vertical-align: middle;
+  }
+};
+.wp-block-button[class*="icon"] {
+  &[class*="--after"] {
+    .wp-block-button__link:after {
+      content: "";
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background-size: cover;
+      vertical-align: bottom;
+      margin-left: 1em;
+    }
+  }
+  &[class*="__download"] {
+    .wp-block-button__link:after {  background-image: url("./assets/icons/download.svg"); }
+  }
+}
+
+.position-absolute {
+  position: absolute!important;
+}
+
+.display-flex {
+  display: flex!important;
+}
+.align__content--right {
+  align-items: flex-end;
+  text-align: right;
+  margin-right: 0;
+  margin-left: auto;
+}
+.align__self--right {
+  align-self: flex-end;
+  text-align: right;
+  margin-right: 0;
+  margin-left: auto;
+}
+.align-items-flex-end {
+  align-items: flex-end;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-flex-end {
+  justify-content: flex-end;
+}
+.height-full { 
+  height: 100%;
+}
+.padding__all--none {
+  padding: 0!important;
+}
+.margin__vertical--none {
+  margin-top: 0!important;
+  margin-bottom: 0!important;
+}
+.padding__vertical--big {
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+}
+.padding-big {
+  @media (max-width: 1440px) {
+    padding: 5vw!important;
+  }
+  padding: 50px!important;
+}
+.pull-up-12 {
+  transform: translateY(-12px);
+}
+.push-down-40 {
+  transform: translateY(40px);
+}
+.center-vertically {
+  align-items: center;
+}
+.max-width-760 {
+  max-width: 760px!important;
+}
+.hide-mobile {
+  @media (max-width: 1000px) {
+    display: none!important;
+  }
+}
+
+[class*="bg__waves"]  {
+  background-size: cover;
+  &--green { background-image: url("./assets/images/waves-green.svg"); }
+  &--blue { background-image: url("./assets/images/waves-blue.svg"); }
+  &--metro { background-image: url("./assets/images/waves-metro.svg"); }
+}
+.bg__waves--green {
+  background-size: cover;
+  background-image: url("./assets/images/waves-green.svg");
+}
+.bg__waves--blue {
+  background-size: cover;
+  background-image: url("./assets/images/waves-blue.svg");
+}
+.bg__waves--darkblue {
+  background-size: cover;
+  background-image: url("./assets/images/waves-blue-dark.svg");
+}
+.bg__waves--metro {
+  background-size: cover;
+  background-image: url("./assets/images/waves-metro.svg");
+}
+
+.playbook .wp-block-playbook-hero p, .playbook .wp-block-playbook-hero li, .playbook .wp-block-playbook-hero span, .playbook .wp-block-playbook-hero a, .playbook .hero p, .playbook .hero li, .playbook .hero span, .playbook .hero a, .playbook #hero p, .playbook #hero li, .playbook #hero span, .playbook #hero a, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero p, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero li, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero span, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero a, .block-editor-page .editor-styles-wrapper .hero p, .block-editor-page .editor-styles-wrapper .hero li, .block-editor-page .editor-styles-wrapper .hero span, .block-editor-page .editor-styles-wrapper .hero a, .block-editor-page .editor-styles-wrapper #hero p, .block-editor-page .editor-styles-wrapper #hero li, .block-editor-page .editor-styles-wrapper #hero span, .block-editor-page .editor-styles-wrapper #hero a {
+  font-size: 20px;
+}
+
+.block-editor-page .editor-styles-wrapper #hero li { font-size: 20px!important };

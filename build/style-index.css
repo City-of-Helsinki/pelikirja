@@ -1,0 +1,86 @@
+[class*="__inner-container"] .collapse-list .collapse .wp-block-group {
+  max-width: inherit !important; }
+
+.collapse-list {
+  max-width: 100%; }
+  .collapse-list.ohjeistukset .collapse-header {
+    background-color: #f5a3c7; }
+  .collapse-list .collapse {
+    position: relative;
+    border-bottom: 1px solid #B2B2B2;
+    margin: 1rem 0; }
+    .collapse-list .collapse:hover {
+      cursor: pointer; }
+    .collapse-list .collapse .wp-block-group {
+      max-width: inherit;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      padding-top: 2.4rem !important;
+      padding-bottom: 2.4rem !important; }
+    .collapse-list .collapse .collapse-list-header {
+      margin-left: 0 !important; }
+    .collapse-list .collapse .collapse-header {
+      max-width: 100%;
+      padding: 0 2rem;
+      margin-bottom: 0;
+      background-color: transparent;
+      text-align: left;
+      outline: none; }
+      .collapse-list .collapse .collapse-header h3 {
+        margin: 0; }
+      .collapse-list .collapse .collapse-header:after {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        right: 1rem;
+        display: inline-block;
+        height: 3rem;
+        width: 3rem;
+        background: url("data:image/svg+xml;charset=utf-8,%3Csvg role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M0 0h24v24H0z'/%3E%3Cpath fill='currentColor' d='M12 13.5l5-5 1.5 1.5-6.5 6.5L5.5 10 7 8.5z'/%3E%3C/g%3E%3C/svg%3E");
+        transform: rotate(0deg); }
+      .collapse-list .collapse .collapse-header.content-shown:after {
+        transform: rotate(180deg); }
+    .collapse-list .collapse .collapse-content {
+      padding: 2rem;
+      display: none;
+      -webkit-animation-duration: 0.3s;
+              animation-duration: 0.3s;
+      margin-top: 0; }
+      .collapse-list .collapse .collapse-content p, .collapse-list .collapse .collapse-content li {
+        font-size: 20px; }
+
+.playbook .wp-block-playbook-hero, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero {
+  background-size: 1440px;
+  background-position: left top;
+  background-repeat: repeat-x; }
+
+.playbook .wp-block-playbook-hero.background-cover, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero.background-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+@media (min-width: 1024px) {
+  .playbook .wp-block-playbook-hero .wp-block-group, .playbook .wp-block-playbook-hero .wp-block-group__inner-container, .playbook .wp-block-playbook-hero .wp-block-columns, .playbook .wp-block-playbook-hero .wp-block-column, .playbook .hero .wp-block-group, .playbook .hero .wp-block-group__inner-container, .playbook .hero .wp-block-columns, .playbook .hero .wp-block-column, .playbook #hero .wp-block-group, .playbook #hero .wp-block-group__inner-container, .playbook #hero .wp-block-columns, .playbook #hero .wp-block-column, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero .wp-block-group, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero .wp-block-group__inner-container, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero .wp-block-columns, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero .wp-block-column, .block-editor-page .editor-styles-wrapper .hero .wp-block-group, .block-editor-page .editor-styles-wrapper .hero .wp-block-group__inner-container, .block-editor-page .editor-styles-wrapper .hero .wp-block-columns, .block-editor-page .editor-styles-wrapper .hero .wp-block-column, .block-editor-page .editor-styles-wrapper #hero .wp-block-group, .block-editor-page .editor-styles-wrapper #hero .wp-block-group__inner-container, .block-editor-page .editor-styles-wrapper #hero .wp-block-columns, .block-editor-page .editor-styles-wrapper #hero .wp-block-column {
+    min-height: 730px; } }
+
+.playbook .wp-block-playbook-hero .wp-block-columns, .playbook .hero .wp-block-columns, .playbook #hero .wp-block-columns, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero .wp-block-columns, .block-editor-page .editor-styles-wrapper .hero .wp-block-columns, .block-editor-page .editor-styles-wrapper #hero .wp-block-columns {
+  width: calc( 100% - 4rem) !important;
+  margin: 0 auto; }
+
+.playbook .wp-block-playbook-hero .wp-block-column:last-of-type, .playbook .hero .wp-block-column:last-of-type, .playbook #hero .wp-block-column:last-of-type, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero .wp-block-column:last-of-type, .block-editor-page .editor-styles-wrapper .hero .wp-block-column:last-of-type, .block-editor-page .editor-styles-wrapper #hero .wp-block-column:last-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.playbook .wp-block-playbook-hero .hero-header, .playbook .wp-block-playbook-hero h1, .playbook .hero .hero-header, .playbook .hero h1, .playbook #hero .hero-header, .playbook #hero h1, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero .hero-header, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero h1, .block-editor-page .editor-styles-wrapper .hero .hero-header, .block-editor-page .editor-styles-wrapper .hero h1, .block-editor-page .editor-styles-wrapper #hero .hero-header, .block-editor-page .editor-styles-wrapper #hero h1 {
+  margin: 8rem 0 15rem;
+  -webkit-margin-before: 8rem;
+          margin-block-start: 8rem;
+  -webkit-margin-after: 15rem;
+          margin-block-end: 15rem; }
+
+.playbook .wp-block-playbook-hero p, .playbook .wp-block-playbook-hero li, .playbook .wp-block-playbook-hero span, .playbook .wp-block-playbook-hero a, .playbook .hero p, .playbook .hero li, .playbook .hero span, .playbook .hero a, .playbook #hero p, .playbook #hero li, .playbook #hero span, .playbook #hero a, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero p, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero li, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero span, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero a, .block-editor-page .editor-styles-wrapper .hero p, .block-editor-page .editor-styles-wrapper .hero li, .block-editor-page .editor-styles-wrapper .hero span, .block-editor-page .editor-styles-wrapper .hero a, .block-editor-page .editor-styles-wrapper #hero p, .block-editor-page .editor-styles-wrapper #hero li, .block-editor-page .editor-styles-wrapper #hero span, .block-editor-page .editor-styles-wrapper #hero a {
+  font-size: 2rem; }
+
+
+/*# sourceMappingURL=style-index.css.map*/

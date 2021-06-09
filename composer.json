@@ -1,0 +1,16 @@
+{
+  "name": "eqsign/playbook",
+  "type": "wordpress-theme",
+	"version": "master",
+  "authors": [
+    {
+      "name": "eQsign",
+      "email": "mika@equstom.fi"
+    }
+  ],
+	"require": {
+    "wecodemore/wpstarter": "~2.0",
+    "johnpbloch/wordpress-core": ">5.0",
+    "wpackagist-theme/twentytwenty": ">=1.7"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "nodeVersion": "v10.15.0",
+  "modulesFolders": [
+    "node_modules"
+  ],
+  "flags": [],
+  "linkedModules": [],
+  "topLevelPatterns": [
+    "hds-core@^0.17.0",
+    "hds-design-tokens@^0.17.0"
+  ],
+  "lockfileEntries": {
+    "hds-core@^0.17.0": "https://registry.yarnpkg.com/hds-core/-/hds-core-0.17.0.tgz#f6b4378f1b1aa8679faae9b2cfe6a0bd687f417a",
+    "hds-design-tokens@^0.17.0": "https://registry.yarnpkg.com/hds-design-tokens/-/hds-design-tokens-0.17.0.tgz#1fd4e80dd7e5d3a9af0790c3f8cfd66834298e15"
+  },
+  "files": [],
+  "artifacts": {}
+}

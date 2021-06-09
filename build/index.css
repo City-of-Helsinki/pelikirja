@@ -1,0 +1,12 @@
+.block-editor-page .editor-styles-wrapper .collapse-list {
+  border: 1px solid lightgrey; }
+
+.block-editor-page .editor-styles-wrapper .collapse-content {
+  display: block;
+  border: 1px solid lightgrey; }
+
+.block-editor-page .editor-styles-wrapper .wp-block .wp-block[data-type="core/group"] {
+  max-width: 1200px !important; }
+
+
+/*# sourceMappingURL=index.css.map*/

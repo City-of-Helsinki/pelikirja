@@ -1,0 +1,1664 @@
+@charset "UTF-8";
+/*
+ Theme Name:   Playbook
+ Description:  Playbook theming based on Twenty twenty them
+ Author:       eQsign / Mika Hämäläinen
+ Author URI:   https://eqsign.fi
+ Template:     twentytwenty
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  playbook
+*/
+body.playbook {
+  background: #fafafb;
+}
+
+body.playbook .entry-content [class*="bg__waves"], body.playbook .entry-content > [class*="bg__waves"] {
+  background-size: cover;
+}
+
+body.playbook .entry-content [class*="bg__waves"]--green, body.playbook .entry-content > [class*="bg__waves"]--green {
+  background-image: url("./assets/images/waves-green.png");
+}
+
+body.playbook .entry-content [class*="bg__waves"]--blue, body.playbook .entry-content > [class*="bg__waves"]--blue {
+  background-image: url("./assets/images/waves-blue.png");
+}
+
+body.playbook .entry-content [class*="bg__waves"]--metro, body.playbook .entry-content > [class*="bg__waves"]--metro {
+  background-image: url("./assets/images/waves-metro.png");
+}
+
+body.playbook .entry-content .bg__waves--green, body.playbook .entry-content > .bg__waves--green {
+  background-size: cover;
+  background-image: url("./assets/images/waves-green.png");
+}
+
+body.playbook .entry-content .bg__waves--blue, body.playbook .entry-content > .bg__waves--blue {
+  background-size: cover;
+  background-image: url("./assets/images/waves-blue.png");
+}
+
+body.playbook .entry-content .bg__waves--darkblue, body.playbook .entry-content > .bg__waves--darkblue {
+  background-size: cover;
+  background-image: url("./assets/images/waves-blue-dark.png");
+}
+
+body.playbook .entry-content .bg__waves--metro, body.playbook .entry-content > .bg__waves--metro {
+  background-size: cover;
+  background-image: url("./assets/images/waves-metro.png");
+}
+
+#hero {
+  background-size: 1440px;
+  background-repeat: repeat-x;
+  background-position: top left;
+}
+
+body.page-kanavalinjaukset #hero {
+  background-image: url("./assets/images/hero-bg-1.svg");
+}
+
+body.page-mobiilipalvelut #hero {
+  background-image: url("./assets/images/hero-bg-2.svg");
+}
+
+body.page-kehittamisentuki #hero {
+  background-image: url("./assets/images/hero-bg-3.svg");
+}
+
+body.page-hel-fi-uudistusmalli #hero {
+  background-image: url("./assets/images/hero-bg-4.svg");
+}
+
+body.page-sisaltomuotoilu #hero {
+  background-image: url("./assets/images/hero-bg-5.svg");
+}
+
+.bc-fog {
+  background-color: #9fc9eb;
+}
+
+.bc-copper-medium-light {
+  background-color: #9ef0de;
+}
+
+.has-white-color {
+  color: #FFFFFF;
+}
+
+.has-black-color {
+  color: #000000;
+}
+
+.has-brick-color {
+  color: #bd2719;
+}
+
+.has-bus-color {
+  color: #0000bf;
+}
+
+.has-coat-of-arms-color {
+  color: #0072c6;
+}
+
+.has-copper-color {
+  color: #00d7a7;
+}
+
+.has-engel-color {
+  color: #ffe977;
+}
+
+.has-fog-color {
+  color: #9fc9eb;
+}
+
+.has-gold-color {
+  color: #c2a251;
+}
+
+.has-metro-color {
+  color: #fd4f00;
+}
+
+.has-silver-color {
+  color: #dedfe1;
+}
+
+.has-summer-color {
+  color: #ffc61e;
+}
+
+.has-suomenlinna-color {
+  color: #f5a3c7;
+}
+
+.has-tram-color {
+  color: #009246;
+}
+
+.has-tram-light-color {
+  color: #dff7eb;
+}
+
+.has-tram-medium-light-color {
+  color: #a3e3c2;
+}
+
+.has-copper-medium-light-color {
+  color: #9ef0de;
+}
+
+.has-fog-dark-color {
+  color: #72a5cf;
+}
+
+.has-white-background-color {
+  color: #FFFFFF;
+}
+
+.has-black-background-color {
+  color: #000000;
+}
+
+.has-brick-background-color {
+  color: #bd2719;
+}
+
+.has-bus-background-color {
+  color: #0000bf;
+}
+
+.has-coat-of-arms-background-color {
+  color: #0072c6;
+}
+
+.has-copper-background-color {
+  color: #00d7a7;
+}
+
+.has-engel-background-color {
+  color: #ffe977;
+}
+
+.has-fog-background-color {
+  color: #9fc9eb;
+}
+
+.has-gold-background-color {
+  color: #c2a251;
+}
+
+.has-metro-background-color {
+  color: #fd4f00;
+}
+
+.has-silver-background-color {
+  color: #dedfe1;
+}
+
+.has-summer-background-color {
+  color: #ffc61e;
+}
+
+.has-suomenlinna-background-color {
+  color: #f5a3c7;
+}
+
+.has-tram-background-color {
+  color: #009246;
+}
+
+.has-tram-light-background-color {
+  color: #dff7eb;
+}
+
+.has-tram-medium-light-background-color {
+  color: #a3e3c2;
+}
+
+.has-copper-medium-light-background-color {
+  color: #9ef0de;
+}
+
+.has-fog-dark-background-color {
+  color: #72a5cf;
+}
+
+.wp-block-button[class*="icon"][class*="--after"] .wp-block-button__link:after {
+  content: "";
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-size: cover;
+  vertical-align: bottom;
+  margin-left: 1em;
+}
+
+.wp-block-button[class*="icon"][class*="__download"] .wp-block-button__link:after {
+  background-image: url("./assets/icons/download.svg");
+}
+
+@font-face {
+  font-family: 'HelsinkiGrotesk-Regular';
+  src: url("assets/fonts/HelsinkiGrotesk-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("assets/fonts/HelsinkiGrotesk-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/HelsinkiGrotesk-Regular.woff2") format("woff2"), url("assets/fonts/HelsinkiGrotesk-Regular.woff") format("woff"), url("assets/fonts/HelsinkiGrotesk-Regular.ttf") format("truetype"), url("assets/fonts/HelsinkiGrotesk-Regular.svg") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelsinkiGrotesk-Bold';
+  src: url("assets/fonts/HelsinkiGrotesk-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("assets/fonts/HelsinkiGrotesk-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/HelsinkiGrotesk-Bold.woff2") format("woff2"), url("assets/fonts/HelsinkiGrotesk-Bold.woff") format("woff"), url("assets/fonts/HelsinkiGrotesk-Bold.ttf") format("truetype"), url("assets/fonts/HelsinkiGrotesk-Bold.svg") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.playbook, .editor-styles-wrapper {
+  font-family: "HelsinkiGrotesk-Regular", Arial, Helvetica, sans-serif;
+}
+
+.playbook .entry-content,
+.playbook .entry-content cite,
+.playbook .entry-content figcaption,
+.playbook .entry-content table,
+.playbook .entry-content address,
+.playbook .entry-content .wp-caption-text,
+.playbook .entry-content .wp-block-file, .editor-styles-wrapper .entry-content,
+.editor-styles-wrapper .entry-content cite,
+.editor-styles-wrapper .entry-content figcaption,
+.editor-styles-wrapper .entry-content table,
+.editor-styles-wrapper .entry-content address,
+.editor-styles-wrapper .entry-content .wp-caption-text,
+.editor-styles-wrapper .entry-content .wp-block-file {
+  font-family: "HelsinkiGrotesk-Regular", Arial, Helvetica, sans-serif;
+}
+
+.playbook .entry-content h1,
+.playbook .entry-content h2,
+.playbook .entry-content h3,
+.playbook .entry-content h4,
+.playbook .entry-content h5,
+.playbook .entry-content h6, .editor-styles-wrapper .entry-content h1,
+.editor-styles-wrapper .entry-content h2,
+.editor-styles-wrapper .entry-content h3,
+.editor-styles-wrapper .entry-content h4,
+.editor-styles-wrapper .entry-content h5,
+.editor-styles-wrapper .entry-content h6 {
+  font-family: "HelsinkiGrotesk-Bold",Georgia,Times,Times New Roman,serif;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: .8rem;
+  letter-spacing: normal;
+}
+
+.playbook h1, .playbook h2, .playbook h3, .playbook h4, .playbook h5, .playbook h6, .editor-styles-wrapper h1, .editor-styles-wrapper h2, .editor-styles-wrapper h3, .editor-styles-wrapper h4, .editor-styles-wrapper h5, .editor-styles-wrapper h6 {
+  font-family: "HelsinkiGrotesk-Bold",Georgia,Times,Times New Roman,serif;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: .8rem;
+  letter-spacing: normal;
+}
+
+.playbook h1, .editor-styles-wrapper h1 {
+  font-size: 5.2rem;
+}
+
+@media (max-width: 576px) {
+  .playbook h1, .editor-styles-wrapper h1 {
+    font-size: 4rem;
+  }
+}
+
+.playbook .entry-content h2, .editor-styles-wrapper .entry-content h2 {
+  font-size: 3.6rem;
+  margin-top: 5.6rem !important;
+}
+
+.playbook h3, .editor-styles-wrapper h3 {
+  font-size: 2.4rem;
+}
+
+.playbook h4, .editor-styles-wrapper h4 {
+  font-size: 2rem;
+}
+
+.playbook h5, .editor-styles-wrapper h5 {
+  font-size: 1.8rem;
+}
+
+.playbook h5, .editor-styles-wrapper h5 {
+  font-size: 1.6rem;
+}
+
+.playbook p, .editor-styles-wrapper p {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 2.4rem;
+          margin-block-end: 2.4rem;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.playbook hr, .editor-styles-wrapper hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.playbook li, .editor-styles-wrapper li {
+  font-size: 1.6rem;
+}
+
+.playbook pre, .editor-styles-wrapper pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.playbook a, .editor-styles-wrapper a {
+  background-color: transparent;
+}
+
+.playbook abbr[title], .editor-styles-wrapper abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+.playbook b, .playbook strong, .editor-styles-wrapper b, .editor-styles-wrapper strong {
+  font-weight: bolder;
+}
+
+.playbook code, .playbook kbd, .playbook samp, .editor-styles-wrapper code, .editor-styles-wrapper kbd, .editor-styles-wrapper samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.playbook small, .editor-styles-wrapper small {
+  font-size: 80%;
+}
+
+.playbook sub, .playbook sup, .editor-styles-wrapper sub, .editor-styles-wrapper sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.playbook sub, .editor-styles-wrapper sub {
+  bottom: -.25em;
+}
+
+.playbook sup, .editor-styles-wrapper sup {
+  top: -.5em;
+}
+
+.playbook .font-size-16, .editor-styles-wrapper .font-size-16 {
+  font-size: 1.6rem;
+}
+
+.playbook .font-size-20, .editor-styles-wrapper .font-size-20 {
+  font-size: 2rem;
+}
+
+.playbook .fontsize-heading-xl {
+  font-size: 5.2rem;
+}
+
+.playbook .fontsize-heading-l {
+  font-size: 3.6rem;
+}
+
+.playbook .fontsize-heading-m {
+  font-size: 2.4rem;
+}
+
+.playbook .fontsize-heading-s {
+  font-size: 2rem;
+}
+
+.playbook .fontsize-heading-xs {
+  font-size: 1.8rem;
+}
+
+.playbook .fontsize-heading-xxs {
+  font-size: 1.6rem;
+}
+
+.playbook .fontsize-body-s {
+  font-size: 1.4rem;
+}
+
+.playbook .fontsize-body-m {
+  font-size: 1.6rem;
+}
+
+.playbook .fontsize-body-l {
+  font-size: 1.8rem;
+}
+
+.playbook .fontsize-body-xl {
+  font-size: 2rem;
+}
+
+.playbook ul > li {
+  font-weight: 400;
+}
+
+.playbook .fontsize-list-xl {
+  font-size: 1.8rem;
+}
+
+.playbook .fontsize-list-xl li, .playbook .fontsize-list-xl li p {
+  font-size: 1.8rem;
+}
+
+.internal-links {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.internal-links a {
+  display: inline-block;
+  margin: 0 9px;
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.playbook .ingress {
+  font-size: 2rem;
+}
+
+.position-absolute {
+  position: absolute !important;
+}
+
+.display-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.align__content--right {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: right;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.align__self--right {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: right;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.align-items-flex-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify-content-flex-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.height-full {
+  height: 100%;
+}
+
+.padding__all--none {
+  padding: 0 !important;
+}
+
+.margin__vertical--none {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.padding__vertical--big {
+  padding: 5rem !important;
+}
+
+@media (max-width: 1440px) {
+  .padding__vertical--big {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+}
+
+.padding-big {
+  padding: 5rem !important;
+}
+
+@media (max-width: 1440px) {
+  .padding-big {
+    padding: 5vw !important;
+  }
+}
+
+.pull-up-12 {
+  -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
+}
+
+.push-down-40 {
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+}
+
+.center-vertically {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.max-width-760 {
+  max-width: 760px !important;
+}
+
+@media (max-width: 1000px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+.playbook .bottom-header {
+  display: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+@media (min-width: 1000px) {
+  .playbook .bottom-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.playbook .bottom-header .header-inner {
+  padding-bottom: 0;
+}
+
+.playbook .bottom-header .header-toggles {
+  display: none;
+}
+
+.breadcrumbs-container {
+  padding: 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+.breadcrumbs-container .breadcrumbs-inner {
+  padding: 1.6rem 0 0;
+  max-width: 168rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .breadcrumbs-container .breadcrumbs-inner {
+    width: calc(100% - 8rem);
+  }
+}
+
+@media (max-width: 1000px) {
+  .breadcrumbs-container {
+    -webkit-transform: translate(2rem, 7.4rem);
+            transform: translate(2rem, 7.4rem);
+  }
+}
+
+.playbook-card, .card, .block-editor-page .editor-styles-wrapper .card {
+  max-width: 100% !important;
+}
+
+.playbook-card .card__text, .playbook-card .wp-block-columns.card__text, .card .card__text, .card .wp-block-columns.card__text, .block-editor-page .editor-styles-wrapper .card .card__text, .block-editor-page .editor-styles-wrapper .card .wp-block-columns.card__text {
+  background-color: white;
+}
+
+@media (min-width: 700px) {
+  .playbook-card .card__text, .playbook-card .wp-block-columns.card__text, .card .card__text, .card .wp-block-columns.card__text, .block-editor-page .editor-styles-wrapper .card .card__text, .block-editor-page .editor-styles-wrapper .card .wp-block-columns.card__text {
+    margin: 5.6rem 1.6rem 6.2rem 0;
+    padding: 4rem;
+  }
+}
+
+body.playbook .entry-content .playbook-card, body.playbook .entry-content .card, body.playbook .entry-content > .playbook-card, body.playbook .entry-content > .card {
+  background-color: #fafafb;
+  max-width: 100%;
+}
+
+body.playbook .entry-content .playbook-card--img-left, body.playbook .entry-content .card--img-left, body.playbook .entry-content > .playbook-card--img-left, body.playbook .entry-content > .card--img-left {
+  background-size: 75%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+body.playbook .entry-content .playbook-card--img-right, body.playbook .entry-content .card--img-right, body.playbook .entry-content > .playbook-card--img-right, body.playbook .entry-content > .card--img-right {
+  background-size: 75%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+body.playbook .entry-content .playbook-card__text, body.playbook .entry-content .card__text, body.playbook .entry-content > .playbook-card__text, body.playbook .entry-content > .card__text {
+  background-color: white;
+}
+
+@media (min-width: 700px) {
+  body.playbook .entry-content .playbook-card__text, body.playbook .entry-content .card__text, body.playbook .entry-content > .playbook-card__text, body.playbook .entry-content > .card__text {
+    margin: 5.6rem 1.6rem 6.2rem 0;
+    padding: 4rem;
+  }
+}
+
+body.playbook .entry-content .playbook-card .wp-block-separator, body.playbook .entry-content .card .wp-block-separator, body.playbook .entry-content > .playbook-card .wp-block-separator, body.playbook .entry-content > .card .wp-block-separator {
+  width: 160px;
+  max-width: 160px !important;
+  height: 2px;
+  margin: 2rem auto;
+  background: #9fc9eb !important;
+  opacity: 1;
+}
+
+body.playbook .entry-content .playbook-card .wp-block-separator::before, body.playbook .entry-content .card .wp-block-separator::before, body.playbook .entry-content > .playbook-card .wp-block-separator::before, body.playbook .entry-content > .card .wp-block-separator::before {
+  display: none;
+}
+
+body.playbook .entry-content .playbook-card .wp-block-separator::after, body.playbook .entry-content .card .wp-block-separator::after, body.playbook .entry-content > .playbook-card .wp-block-separator::after, body.playbook .entry-content > .card .wp-block-separator::after {
+  display: none;
+}
+
+body.playbook .entry-content .playbook-card .wp-block-buttons, body.playbook .entry-content .card .wp-block-buttons, body.playbook .entry-content > .playbook-card .wp-block-buttons, body.playbook .entry-content > .card .wp-block-buttons {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body.playbook .entry-content .playbook-card .wp-block-button.playbook__button--arrow:after, body.playbook .entry-content .card .wp-block-button.playbook__button--arrow:after, body.playbook .entry-content > .playbook-card .wp-block-button.playbook__button--arrow:after, body.playbook .entry-content > .card .wp-block-button.playbook__button--arrow:after {
+  content: "\f344";
+  color: #005799;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 24px/1 'dashicons';
+  margin-left: 0.2em;
+  vertical-align: middle;
+}
+
+body.playbook .entry-content .playbook-card .wp-block-button__link, body.playbook .entry-content .card .wp-block-button__link, body.playbook .entry-content > .playbook-card .wp-block-button__link, body.playbook .entry-content > .card .wp-block-button__link {
+  border: none;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: none;
+  color: #005799;
+}
+
+.playbook-card-tables .wp-block-column .wp-block-group:nth-of-type(2) {
+  border-left: 1px solid #72a5cf;
+  border-right: 1px solid #72a5cf;
+  margin: 0 !important;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 700px) {
+  .playbook-card-tables .wp-block-column:not(:first-child) {
+    margin-left: 8px;
+  }
+  .playbook-card-tables .wp-block-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .playbook-card-tables .wp-block-column .wp-block-group {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0;
+            flex: 0 0;
+    padding: 1.6rem 0 !important;
+    width: 100%;
+  }
+  .playbook-card-tables .wp-block-column .wp-block-group:first-child {
+    -ms-flex-preferred-size: 5em;
+        flex-basis: 5em;
+  }
+  .playbook-card-tables .wp-block-column .wp-block-group:nth-of-type(2) {
+    -ms-flex-preferred-size: 8em;
+        flex-basis: 8em;
+    margin: 0 !important;
+  }
+  .playbook-card-tables .wp-block-column .wp-block-group:nth-of-type(3) {
+    -ms-flex-preferred-size: 15em;
+        flex-basis: 15em;
+  }
+  .playbook-card-tables .wp-block-column .wp-block-group:last-child {
+    -ms-flex-preferred-size: 15em;
+        flex-basis: 15em;
+  }
+  .playbook-card-tables .wp-block-column .wp-block-group p, .playbook-card-tables .wp-block-column .wp-block-group li {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .playbook-card-tables .wp-block-column .wp-block-group:first-child {
+    -ms-flex-preferred-size: 6em;
+        flex-basis: 6em;
+  }
+  .playbook-card-tables .wp-block-column .wp-block-group:nth-of-type(2) {
+    -ms-flex-preferred-size: 10em;
+        flex-basis: 10em;
+  }
+  .playbook-card-tables .wp-block-column .wp-block-group:nth-of-type(3) {
+    -ms-flex-preferred-size: 20em;
+        flex-basis: 20em;
+  }
+  .playbook-card-tables .wp-block-column .wp-block-group:last-child {
+    -ms-flex-preferred-size: 20em;
+        flex-basis: 20em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .playbook-card-tables .wp-block-column .wp-block-group:first-child {
+    -ms-flex-preferred-size: 6em;
+        flex-basis: 6em;
+  }
+  .playbook-card-tables .wp-block-column .wp-block-group:nth-of-type(2) {
+    -ms-flex-preferred-size: 9em;
+        flex-basis: 9em;
+  }
+  .playbook-card-tables .wp-block-column .wp-block-group:nth-of-type(3) {
+    -ms-flex-preferred-size: 15em;
+        flex-basis: 15em;
+  }
+  .playbook-card-tables .wp-block-column .wp-block-group:last-child {
+    -ms-flex-preferred-size: 15em;
+        flex-basis: 15em;
+  }
+}
+
+.collapse-list-header {
+  margin-left: 0 !important;
+}
+
+.playbook .wp-block-cover {
+  min-height: 40vw;
+}
+
+@media (max-width: 1000px) {
+  .playbook .wp-block-cover {
+    background-image: url(https://eqsign.fi/test/wp-content/uploads/2021/01/cover-bg-mobile.svg) !important;
+    background-position: left;
+  }
+  .playbook .wp-block-cover h1 {
+    font-size: 3rem;
+  }
+}
+
+.playbook.home .wp-block-cover {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.playbook.home .wp-block-cover span.pelikirja-text {
+  display: inline-block;
+  background-image: url(https://eqsign.fi/test/wp-content/uploads/2021/01/badge.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 4.3em;
+  height: 2.1em;
+  padding-top: 0.4em;
+}
+
+.playbook #site-footer.site-footer {
+  position: relative;
+  margin-top: 0;
+  max-width: 100%;
+  background-color: #a3e3c2;
+  color: #a3e3c2;
+}
+
+.playbook #site-footer.site-footer .section-inner {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.playbook #site-footer.site-footer .section-inner section {
+  padding: 1.2rem;
+}
+
+.playbook #site-footer.site-footer .section-inner hr {
+  width: calc(100% - 3.2rem);
+  height: 3px;
+  background: #444053;
+  margin: 1.2rem;
+}
+
+.playbook #site-footer.site-footer .section-inner ul {
+  margin-bottom: 0;
+}
+
+.playbook #site-footer.site-footer .section-inner li {
+  display: inline-block;
+  list-style: none;
+  line-height: 1.5;
+  margin: 0.5rem 0 0 2rem;
+}
+
+.playbook #site-footer.site-footer .section-inner li:first-child {
+  margin-left: 0;
+}
+
+.playbook #site-footer.site-footer .section-inner a, .playbook #site-footer.site-footer .section-inner a:visited {
+  font-weight: 700;
+  color: black;
+}
+
+.playbook #site-footer.site-footer .section-inner .footer-branding .footer-titles.custom-titles {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1000px) {
+  .playbook #site-footer.site-footer .section-inner .footer-branding .footer-titles.custom-titles {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.playbook #site-footer.site-footer .section-inner .footer-branding .footer-titles.custom-titles .site-logo {
+  margin-right: 1.6rem;
+}
+
+.playbook #site-footer.site-footer .section-inner .footer-branding .footer-titles.custom-titles .site-name {
+  font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+  .playbook #site-footer.site-footer .section-inner .footer-branding .footer-titles.custom-titles .site-name {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .playbook #site-footer.site-footer .section-inner .footer-navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.playbook #site-footer.site-footer .section-inner .footer-navigation .menu li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10rem;
+          flex: 0 0 10rem;
+  display: inline-block;
+  list-style: none;
+}
+
+@media (max-width: 1000px) {
+  .playbook #site-footer.site-footer .section-inner .footer-navigation .menu li {
+    margin-left: 0;
+  }
+}
+
+.playbook #site-footer.site-footer .section-inner .footer-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 1000px) {
+  .playbook #site-footer.site-footer .section-inner .footer-tools {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.playbook #site-footer.site-footer .section-inner .footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .playbook #site-footer.site-footer .section-inner .footer-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.playbook #site-footer.site-footer .section-inner .footer-bottom .footer-copyright {
+  font-weight: 300;
+  color: #3f3e3e;
+}
+
+@media (max-width: 1000px) {
+  .playbook #site-footer.site-footer .section-inner .footer-bottom .footer-copyright {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .playbook #site-footer.site-footer .section-inner .footer-bottom .footer-extra-links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .playbook #site-footer.site-footer .section-inner .footer-bottom .footer-extra-links li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 10rem;
+            flex: 0 0 10rem;
+    margin-left: 0;
+  }
+}
+
+.playbook #site-header.header-footer-group {
+  position: relative;
+  background-color: white;
+  max-width: 100%;
+  padding: 0;
+}
+
+.playbook .header-inner {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.playbook .header-navigation-wrapper {
+  width: 100%;
+}
+
+.playbook .wp-block-playbook-hero, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero {
+  background-size: 1440px;
+  background-position: left top;
+  background-repeat: repeat-x;
+}
+
+@media (min-width: 1024px) {
+  .playbook .wp-block-playbook-hero .wp-block-group, .playbook .wp-block-playbook-hero .wp-block-group__inner-container, .playbook .wp-block-playbook-hero .wp-block-columns, .playbook .wp-block-playbook-hero .wp-block-column, .playbook .hero .wp-block-group, .playbook .hero .wp-block-group__inner-container, .playbook .hero .wp-block-columns, .playbook .hero .wp-block-column, .playbook #hero .wp-block-group, .playbook #hero .wp-block-group__inner-container, .playbook #hero .wp-block-columns, .playbook #hero .wp-block-column, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero .wp-block-group, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero .wp-block-group__inner-container, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero .wp-block-columns, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero .wp-block-column, .block-editor-page .editor-styles-wrapper .hero .wp-block-group, .block-editor-page .editor-styles-wrapper .hero .wp-block-group__inner-container, .block-editor-page .editor-styles-wrapper .hero .wp-block-columns, .block-editor-page .editor-styles-wrapper .hero .wp-block-column, .block-editor-page .editor-styles-wrapper #hero .wp-block-group, .block-editor-page .editor-styles-wrapper #hero .wp-block-group__inner-container, .block-editor-page .editor-styles-wrapper #hero .wp-block-columns, .block-editor-page .editor-styles-wrapper #hero .wp-block-column {
+    min-height: 730px;
+  }
+}
+
+.playbook .wp-block-playbook-hero .wp-block-columns, .playbook .hero .wp-block-columns, .playbook #hero .wp-block-columns, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero .wp-block-columns, .block-editor-page .editor-styles-wrapper .hero .wp-block-columns, .block-editor-page .editor-styles-wrapper #hero .wp-block-columns {
+  width: calc( 100% - 4rem) !important;
+  margin: 0 auto;
+}
+
+.playbook .wp-block-playbook-hero .wp-block-column:last-of-type, .playbook .hero .wp-block-column:last-of-type, .playbook #hero .wp-block-column:last-of-type, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero .wp-block-column:last-of-type, .block-editor-page .editor-styles-wrapper .hero .wp-block-column:last-of-type, .block-editor-page .editor-styles-wrapper #hero .wp-block-column:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.playbook .wp-block-playbook-hero .hero-header, .playbook .wp-block-playbook-hero h1, .playbook .hero .hero-header, .playbook .hero h1, .playbook #hero .hero-header, .playbook #hero h1, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero .hero-header, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero h1, .block-editor-page .editor-styles-wrapper .hero .hero-header, .block-editor-page .editor-styles-wrapper .hero h1, .block-editor-page .editor-styles-wrapper #hero .hero-header, .block-editor-page .editor-styles-wrapper #hero h1 {
+  margin: 8rem 0 15rem !important;
+  -webkit-margin-before: 8rem;
+          margin-block-start: 8rem;
+  -webkit-margin-after: 15rem;
+          margin-block-end: 15rem;
+}
+
+.playbook .wp-block-playbook-hero p, .playbook .wp-block-playbook-hero li, .playbook .wp-block-playbook-hero span, .playbook .wp-block-playbook-hero a, .playbook .hero p, .playbook .hero li, .playbook .hero span, .playbook .hero a, .playbook #hero p, .playbook #hero li, .playbook #hero span, .playbook #hero a, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero p, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero li, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero span, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero a, .block-editor-page .editor-styles-wrapper .hero p, .block-editor-page .editor-styles-wrapper .hero li, .block-editor-page .editor-styles-wrapper .hero span, .block-editor-page .editor-styles-wrapper .hero a, .block-editor-page .editor-styles-wrapper #hero p, .block-editor-page .editor-styles-wrapper #hero li, .block-editor-page .editor-styles-wrapper #hero span, .block-editor-page .editor-styles-wrapper #hero a {
+  font-size: 20px;
+}
+
+.playbook .wp-block-playbook-hero .rich-text.block-editor-rich-text__editable, .playbook .hero .rich-text.block-editor-rich-text__editable, .playbook #hero .rich-text.block-editor-rich-text__editable, .block-editor-page .editor-styles-wrapper .wp-block-playbook-hero .rich-text.block-editor-rich-text__editable, .block-editor-page .editor-styles-wrapper .hero .rich-text.block-editor-rich-text__editable, .block-editor-page .editor-styles-wrapper #hero .rich-text.block-editor-rich-text__editable {
+  font-size: 20px !important;
+}
+
+.playbook__infoboxes .playbook__infobox {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 2.3rem;
+  border: 2px solid #d0e6f7;
+}
+
+.playbook__infoboxes .playbook__infobox .wp-block-group:first-of-type {
+  height: 100%;
+}
+
+.playbook__infoboxes .playbook__infobox .wp-block-group:first-of-type .wp-block-group__inner-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.playbook__infoboxes .playbook__infobox .wp-block-buttons:last-child {
+  margin-top: auto;
+}
+
+.playbook__infoboxes .playbook__infobox h1, .playbook__infoboxes .playbook__infobox h2, .playbook__infoboxes .playbook__infobox h3, .playbook__infoboxes .playbook__infobox h4, .playbook__infoboxes .playbook__infobox h5, .playbook__infoboxes .playbook__infobox h6, .playbook__infoboxes .playbook__infobox p, .playbook__infoboxes .playbook__infobox ul, .playbook__infoboxes .playbook__infobox .wp-block-buttons {
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
+}
+
+.playbook__infoboxes .playbook__infobox h4 {
+  text-align: center;
+}
+
+.playbook__infoboxes .playbook__infobox .wp-block-separator {
+  width: 160px;
+  max-width: 160px;
+  height: 2px;
+  margin: 2rem auto;
+  background: #9fc9eb !important;
+  opacity: 1;
+}
+
+.playbook__infoboxes .playbook__infobox .wp-block-separator::before {
+  display: none;
+}
+
+.playbook__infoboxes .playbook__infobox .wp-block-separator::after {
+  display: none;
+}
+
+.playbook__infoboxes .playbook__infobox .wp-block-buttons {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.playbook__infoboxes .playbook__infobox .wp-block-button.playbook__button--arrow:after {
+  content: "\f344";
+  color: #005799;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 24px/1 'dashicons';
+  margin-left: 0.2em;
+  vertical-align: middle;
+}
+
+.playbook__infoboxes .playbook__infobox .wp-block-button__link {
+  border: none;
+}
+
+#site-footer {
+  margin-top: 100px !important;
+}
+
+.koro[class*="__before"] {
+  margin-top: 170px !important;
+}
+
+.koro[class*="__before"]:before {
+  content: " ";
+  position: absolute;
+  top: -83px;
+  left: 0;
+  display: block;
+  height: 85px;
+  width: 100%;
+}
+
+.koro[class*="__after"] {
+  margin-bottom: 170px !important;
+}
+
+.koro[class*="__after"]:after {
+  content: " ";
+  position: absolute;
+  bottom: -83px;
+  left: 0;
+  display: block;
+  height: 85px;
+  width: 100%;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
+.koro[class*="--basic"]:before, .koro[class*="--basic"]:after {
+  background-color: currentColor;
+  -webkit-mask: url("./assets/koros/basic.svg");
+          mask: url("./assets/koros/basic.svg");
+}
+
+.koro[class*="--beat"]:before, .koro[class*="--beat"]:after {
+  background-color: currentColor;
+  -webkit-mask: url("./assets/koros/beat.svg");
+          mask: url("./assets/koros/beat.svg");
+}
+
+.koro[class*="--pulse"]:before, .koro[class*="--pulse"]:after {
+  background-color: currentColor;
+  -webkit-mask: url("./assets/koros/pulse.svg");
+          mask: url("./assets/koros/pulse.svg");
+}
+
+.koro[class*="--wave"]:before, .koro[class*="--wave"]:after {
+  background-color: currentColor;
+  -webkit-mask: url("./assets/koros/wave.svg");
+          mask: url("./assets/koros/wave.svg");
+}
+
+.koro[class*="--storm"]:before, .koro[class*="--storm"]:after {
+  background-color: currentColor;
+  -webkit-mask: url("./assets/koros/storm.svg");
+          mask: url("./assets/koros/storm.svg");
+}
+
+.hds-koros {
+  width: 100% !important;
+  max-width: 100% !important;
+  line-height: 0;
+  margin: 0;
+  height: 85px;
+  background-color: transparent;
+}
+
+.hds-koros--flip-horizontal {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
+.koro-wave.bc-fog {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' width='100%25' height='85'%3E%3Cdefs%3E%3Cpattern id='korosWave' x='0' y='0' width='106' height='85'  patternUnits='userSpaceOnUse'%3E%3Cpolygon transform='scale(5.3)' points='0,800 20,800 20,0 9.8,10.1 0,0 ' style='fill:%239fc9eb;' /%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23korosWave)' width='100%25' height='85' /%3E%3C/svg%3E");
+}
+
+.koro-wave.bc-copper-medium-light {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' width='100%25' height='85'%3E%3Cdefs%3E%3Cpattern id='korosBeat' x='0' y='0' width='106' height='85' patternUnits='userSpaceOnUse'%3E%3Cpath transform='scale(5.3)' d='M20,800H0V0c2.8,0,3.5,2.3,3.5,2.3l2.8,8.4c0.6,1.5,1.9,2.5,3.6,2.5c2.8,0,3.6-2.5,3.6-2.5s2.8-8.1,2.8-8.2 C17,1,18.3,0,20,0V800z'%0Astyle='fill:%239ef0de;' /%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23korosBeat)' width='100%25' height='85' /%3E%3C/svg%3E");
+}
+
+.link-block {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+  padding: 0 2.6rem;
+  border-left: 8px solid #9ef0de;
+}
+
+.link-block h3 a, .link-block h3 a:visited {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid #9ef0de;
+}
+
+.link-block h3 a:after, .link-block h3 a:visited:after {
+  content: "\f344";
+  color: #005799;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 24px/1 'dashicons';
+  margin-left: 0.2em;
+  vertical-align: middle;
+}
+
+.playbook #site-content {
+  padding-top: 7.4rem;
+}
+
+@media (min-width: 1000px) {
+  .playbook #site-content {
+    padding-top: 0;
+  }
+}
+
+.playbook .menu-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 7.4rem;
+  border-bottom: 1px solid #cccccc;
+}
+
+.playbook .header-titles.custom-titles {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1000px) {
+  .playbook .header-titles.custom-titles {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.playbook .hki-logo {
+  width: 90px;
+  vertical-align: middle;
+}
+
+.playbook .site-title, .playbook .site-name {
+  display: inline-block;
+  font-family: "Helsinki Grotesk", roboto, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+  margin-left: 25px;
+  margin-top: 1rem;
+  vertical-align: middle;
+}
+
+.playbook .close-nav-toggle {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 64px;
+          flex: 0 1 64px;
+  width: 68px;
+}
+
+.playbook .close-nav-toggle:focus {
+  outline: none;
+}
+
+.playbook .close-nav-toggle .toggle-text {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.playbook .close-nav-toggle .toggle-icon .dashicons {
+  height: 4rem;
+  width: 4rem;
+  font-size: 4rem;
+}
+
+.playbook .search-container {
+  margin: 2.5rem 0;
+}
+
+.playbook .modal-menu .menu-item a, .playbook .modal-menu .menu-item a:visited {
+  color: #1A1A1A;
+  text-decoration: none;
+}
+
+.playbook .mobile-navigation-toggle {
+  position: absolute;
+  right: 1rem;
+}
+
+.playbook .nav-toggle {
+  position: relative;
+  width: auto;
+}
+
+.playbook .nav-toggle:focus {
+  outline: none;
+}
+
+.playbook .nav-toggle .toggle-inner {
+  padding-top: 0;
+}
+
+.playbook .nav-toggle .toggle-text {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.playbook .nav-toggle .toggle-icon {
+  height: 2.5rem;
+}
+
+.playbook .nav-toggle .toggle-icon .dashicons {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 2.5rem;
+}
+
+.playbook.page .entry-header {
+  display: none !important;
+}
+
+.playbook .primary-menu {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.playbook .primary-menu .menu-item {
+  display: inline-block;
+  font-family: "Helsinki Grotesk", roboto, sans-serif;
+  font-size: 1.6rem;
+  margin-top: 0;
+  padding-bottom: 1rem;
+  vertical-align: middle;
+  border-bottom: 0.6rem solid transparent;
+  color: #1A1A1A;
+}
+
+.playbook .primary-menu .menu-item.current-menu-item {
+  border-bottom: 0.6rem solid #00D7A7;
+}
+
+.playbook .primary-menu .menu-item a {
+  font-weight: 500 !important;
+  color: black;
+  line-height: 2em;
+  text-decoration: none;
+}
+
+.playbook .primary-menu .menu-item a:visited {
+  color: black;
+}
+
+.steps {
+  background-image: url("./assets/images/steps-bg.png");
+  background-color: #E8F3FC;
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 22%;
+}
+
+.steps .wp-block-column {
+  border-right: 1px solid;
+}
+
+.steps .wp-block-column:last-child {
+  border-right: none;
+}
+
+.playbook.scroll-down .top-header {
+  height: 5.2rem;
+}
+
+.playbook .top-header {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 7.3rem;
+  padding: 0;
+  background: white;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+@media (min-width: 1000px) {
+  .playbook .top-header {
+    position: relative;
+    padding: 0;
+  }
+}
+
+.playbook .top-header .top-header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+  background: white;
+}
+
+.playbook .top-header .top-header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-items: center;
+}
+
+.playbook .top-header .mobile-navigation-toggle {
+  display: inline-block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100px;
+          flex: 0 1 100px;
+}
+
+@media (min-width: 1000px) {
+  .playbook .top-header .mobile-navigation-toggle {
+    display: none;
+  }
+}
+
+.playbook .top-header .header-titles.custom-titles {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.playbook .top-header .hki-logo {
+  width: 90px;
+  vertical-align: middle;
+}
+
+.playbook .top-header .site-title, .playbook .top-header .site-name {
+  display: inline-block;
+  font-family: "Helsinki Grotesk", roboto, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+  margin-left: 25px;
+  margin-top: 1rem;
+  vertical-align: middle;
+}
+
+@media (min-width: 1000px) {
+  .playbook .top-header .search-container {
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100px;
+            flex: 0 1 100px;
+  }
+}
+
+.playbook.tw-no-title .entry-content > .alignfull:first-child, .playbook.tw-no-title .entry-content > .wp-block-cover.alignfull:first-child {
+  margin-top: auto;
+}
+
+.entry-content hr.wp-block-separator {
+  width: 80%;
+  height: 3px;
+  margin: 2rem auto;
+  background: none;
+  background-color: #00a17d !important;
+}
+
+.entry-content hr.wp-block-separator::before {
+  display: none;
+}
+
+.entry-content hr.wp-block-separator::after {
+  display: none;
+}
+
+.entry-content {
+  font-size: 2rem;
+}
+
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide),
+[class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  max-width: 120rem;
+  width: calc(100% - 4rem);
+}
+
+.post-inner {
+  padding-top: 0 !important;
+}
+
+.wp-block-archives:not(.alignwide):not(.alignfull),
+.wp-block-categories:not(.alignwide):not(.alignfull),
+.wp-block-code,
+.wp-block-columns:not(.alignwide):not(.alignfull),
+.wp-block-cover:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter),
+.wp-block-embed:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter),
+.wp-block-gallery:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter),
+.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull),
+.wp-block-image:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter),
+.wp-block-latest-comments:not(.aligncenter):not(.alignleft):not(.alignright),
+.wp-block-latest-posts:not(.aligncenter):not(.alignleft):not(.alignright),
+.wp-block-media-text:not(.alignwide):not(.alignfull),
+.wp-block-preformatted,
+.wp-block-pullquote:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright),
+.wp-block-quote,
+.wp-block-quote.is-large,
+.wp-block-quote.is-style-large,
+.wp-block-verse,
+.wp-block-video:not(.alignwide):not(.alignfull) {
+  margin-bottom: 3.5rem;
+  margin-top: 3.5rem;
+}
+
+.wp-block-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1023px) {
+  .wp-block-columns {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+  .playbook .wp-block-columns:not([class*="tw-cols-stack"]) > .wp-block-column:not(:only-child) {
+    -ms-flex-preferred-size: calc(100% - 16px) !important;
+        flex-basis: calc(100% - 16px) !important;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+}
+
+.playbook .color-accent, .playbook .color-accent-hover:hover, .playbook .color-accent-hover:focus, .playbook :root .has-accent-color, .playbook .has-drop-cap:not(:focus):first-letter, .playbook .wp-block-button.is-style-outline, .playbook a {
+  color: #005799;
+  font-weight: 700;
+}
+
+input[type="submit"].wpcf7-submit {
+  background: transparent;
+  color: black;
+  border: 2px solid black;
+}
+/*# sourceMappingURL=styles.css.map */
