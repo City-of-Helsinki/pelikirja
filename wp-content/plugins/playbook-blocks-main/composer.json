@@ -1,0 +1,15 @@
+{
+    "name": "eqsign/playbook-blocks",
+    "type": "wordpress-plugin",
+	"version": "master",
+    "authors": [
+        {
+            "name": "Mika Hämäläinen",
+            "email": "mika@equstom.fi"
+        }
+    ],
+	"require": {
+        "wecodemore/wpstarter": "~2.0",
+        "johnpbloch/wordpress-core": ">5.0"
+    }
+}

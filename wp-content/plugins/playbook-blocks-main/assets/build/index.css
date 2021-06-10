@@ -1,0 +1,48 @@
+@charset "UTF-8";
+.block-editor-page .editor-styles-wrapper .playbook-accordion {
+  border: 2px solid #F5A3C7;
+  padding: 20px 20px 50px; }
+  .block-editor-page .editor-styles-wrapper .playbook-accordion:after {
+    content: "Klikkaa lisätäksesi lohkoja haitariin"; }
+
+.block-editor-page .editor-styles-wrapper .playbook-accordion-item {
+  display: block;
+  border: 1px solid grey;
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.block-editor-page .editor-styles-wrapper .playbook-accordion-item-header {
+  position: relative;
+  border-bottom: 1px solid;
+  padding: 24px 40px; }
+  .block-editor-page .editor-styles-wrapper .playbook-accordion-item-header:after {
+    content: " ";
+    position: absolute;
+    bottom: 24px;
+    right: 10px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M0 0h24v24H0z'/%3E%3Cpath fill='currentColor' d='M12 13.5l5-5 1.5 1.5-6.5 6.5L5.5 10 7 8.5z'/%3E%3C/g%3E%3C/svg%3E");
+    transform: rotate(0deg); }
+
+.block-editor-page .editor-styles-wrapper .playbook-accordion-item-content {
+  border: 1px solid red;
+  padding: 2rem 2rem 5rem;
+  margin-top: 40px !important; }
+
+.block-editor-page .editor-styles-wrapper .wp-block .wp-block[data-type="core/group"] {
+  max-width: 1200px !important; }
+
+.block-editor-page .editor-styles-wrapper .collapse-list {
+  border: 1px solid lightgrey; }
+
+.block-editor-page .editor-styles-wrapper .collapse-content {
+  display: block;
+  border: 1px solid lightgrey; }
+
+.block-editor-page .editor-styles-wrapper .wp-block .wp-block[data-type="core/group"] {
+  max-width: 1200px !important; }
+
+
+/*# sourceMappingURL=index.css.map*/
