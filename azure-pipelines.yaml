@@ -1,0 +1,24 @@
+# Continuous integration (CI) triggers cause a pipeline to run whenever you push
+# an update to the specified branches or you push specified tags.
+trigger:
+  branches:
+    include:
+      - main
+
+
+# By default, use self-hosted agents
+pool: Default
+
+# Opting out of pull request validation
+pr: none
+
+resources:
+  repositories:
+    # Azure DevOps repository
+    - repository: pelikirja-pipelines
+      type: git
+      # project/repository
+      name: pelikirja/pelikirja-pipelines
+
+extends:
+  template: azure-pipelines.yml@pelikirja-pipelines
