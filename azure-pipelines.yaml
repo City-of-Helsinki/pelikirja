@@ -21,4 +21,4 @@ resources:
       name: pelikirja/pelikirja-pipelines
 
 extends:
-  template: azure-pipelines.yml@pelikirja-pipelines
+  template: azure-pipelines.yaml@pelikirja-pipelines
