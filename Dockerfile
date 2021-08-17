@@ -2,7 +2,7 @@ FROM wordpress:5.7.2-php8.0-apache
 LABEL maintainer "Joonas Tikkanen <joonas.tikkanen@ambientia.fi>"
 
 RUN apt-get update && \
-    apt-get -y install libfreetype6 libfreetype6-dev wget unzip
+    apt-get -y install libfreetype6 libfreetype6-dev wget unzip default-mysql-client
 
 COPY conf/ports.conf /etc/apache2/ports.conf
 
