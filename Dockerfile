@@ -7,6 +7,7 @@ RUN apt-get update && \
 COPY conf/ports.conf /etc/apache2/ports.conf
 
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
+COPY composer.json /var/www/html
 RUN composer update
 
 COPY wp-content/plugins /usr/src/wordpress/wp-content/plugins
