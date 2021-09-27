@@ -6,7 +6,7 @@ RUN apt-get update && \
 
 COPY conf/ports.conf /etc/apache2/ports.conf
 
-COPY composer.* /var/www/html
+COPY composer.json /var/www/html
 #COPY composer.lock /var/www/html
 
 #WORKDIR /var/www/html
