@@ -9,6 +9,8 @@ COPY conf/ports.conf /etc/apache2/ports.conf
 COPY composer.json /var/www/html
 COPY composer.lock /var/www/html
 
+WORKDIR /var/www/html
+
 RUN curl -sS https://getcomposer.org/installer | php -- \
 --install-dir=/usr/bin --filename=composer && chmod +x /usr/bin/composer 
 
