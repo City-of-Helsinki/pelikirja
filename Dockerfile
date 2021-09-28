@@ -11,12 +11,13 @@ COPY composer.json /var/www/html
 
 RUN chown www-data:www-data /var/www/html/composer.*
 
-#WORKDIR /var/www/html
+
 
 RUN curl -sS https://getcomposer.org/installer | php -- \
 --install-dir=/usr/bin --filename=composer && chmod +x /usr/bin/composer 
 
 USER www-data
+WORKDIR /var/www/html
 RUN composer update
 
 USER root
