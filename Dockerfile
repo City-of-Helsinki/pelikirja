@@ -7,20 +7,18 @@ RUN apt-get update && \
 COPY conf/ports.conf /etc/apache2/ports.conf
 
 COPY composer.json /var/www/html
-#COPY composer.lock /var/www/html
 
-RUN chown www-data:www-data /var/www/html/composer.*
+RUN chown www-data:www-data /var/www/html/composer.json
 
-USER www-data
+# USER www-data
 WORKDIR /var/www/html
 
 RUN curl -sS https://getcomposer.org/installer | php -- \
 --install-dir=/usr/bin --filename=composer && chmod +x /usr/bin/composer 
 
-
 RUN composer update
 
-USER root
+# USER root
 
 COPY wp-content/plugins /usr/src/wordpress/wp-content/plugins
 COPY wp-content/themes /usr/src/wordpress/wp-content/themes
