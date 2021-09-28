@@ -10,8 +10,11 @@ COPY composer.json /var/www/html
 
 RUN chown www-data:www-data /var/www/html/composer.json
 
-# USER www-data
+USER www-data
 WORKDIR /var/www/html
+
+# RUN curl -sS https://getcomposer.org/installer | php -- \
+# --install-dir=/usr/bin --filename=composer && chmod +x /usr/bin/composer 
 
 RUN curl -sS https://getcomposer.org/installer | php -- \
 --install-dir=/usr/bin --filename=composer && chmod +x /usr/bin/composer 
