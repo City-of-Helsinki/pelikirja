@@ -18,7 +18,7 @@ WORKDIR /var/www/html
 
 RUN curl -sS https://getcomposer.org/installer -o installer && env COMPOSER_HOME=/var/www/html/.composer php installer --install-dir=. --filename=composer && chmod +x composer && rm installer
 
-RUN composer update
+RUN php .composer update
 
 # USER root
 
