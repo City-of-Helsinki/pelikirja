@@ -17,7 +17,7 @@ WORKDIR /var/www/html
 # --install-dir=/usr/bin --filename=composer && chmod +x /usr/bin/composer 
 
 RUN curl -sS https://getcomposer.org/installer | php -- \
---install-dir=/usr/bin --filename=composer && chmod +x /usr/bin/composer 
+ --filename=composer && chmod +x composer 
 
 RUN composer update
 
