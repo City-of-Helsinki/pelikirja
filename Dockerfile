@@ -9,15 +9,15 @@ COPY conf/ports.conf /etc/apache2/ports.conf
 COPY composer.json /var/www/html
 #COPY composer.lock /var/www/html
 
-RUN chown 1001810000:1001810000 /var/www/html/composer.*
+RUN chown www-data:www-data /var/www/html/composer.*
 
-
+USER www-data
+WORKDIR /var/www/html
 
 RUN curl -sS https://getcomposer.org/installer | php -- \
 --install-dir=/usr/bin --filename=composer && chmod +x /usr/bin/composer 
 
-USER 1001810000
-WORKDIR /var/www/html
+
 RUN composer update
 
 USER root
