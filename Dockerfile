@@ -8,19 +8,10 @@ COPY conf/ports.conf /etc/apache2/ports.conf
 
 COPY composer.json /var/www/html
 
-RUN chown www-data:www-data /var/www/html/composer.json
+# Install Composer
+RUN wget https://getcomposer.org/installer -O - -q | php -- && mv composer.phar /usr/local/bin/composer
 
-USER www-data
-WORKDIR /var/www/html
-
-# RUN curl -sS https://getcomposer.org/installer | php -- \
-# --install-dir=/usr/bin --filename=composer && chmod +x /usr/bin/composer 
-
-RUN curl -sS https://getcomposer.org/installer -o installer && env COMPOSER_HOME=/var/www/html/.composer php installer --install-dir=. --filename=composer && chmod +x composer && rm installer
-
-RUN ./composer update
-
-# USER root
+RUN composer update
 
 COPY wp-content/plugins /usr/src/wordpress/wp-content/plugins
 COPY wp-content/themes /usr/src/wordpress/wp-content/themes
@@ -29,5 +20,7 @@ VOLUME /var/www/html/wp-content/uploads
 
 # Install wp cli
 RUN wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod +x wp-cli.phar && mv wp-cli.phar /usr/local/bin/wp
+
+RUN chown -R www-data:www-data /var/www/html/
 
 EXPOSE 8080
