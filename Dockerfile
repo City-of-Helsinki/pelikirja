@@ -1,8 +1,8 @@
-FROM wordpress:5.7.2-php7.4-apache
+FROM wordpress:php7.4-apache
 LABEL maintainer "Joonas Tikkanen <joonas.tikkanen@ambientia.fi>"
 
 RUN apt-get update && \
-    apt-get -y install libfreetype6 libfreetype6-dev wget unzip default-mysql-client
+    apt-get -y install libfreetype6 libfreetype6-dev wget unzip default-mysql-client less
 
 COPY conf/ports.conf /etc/apache2/ports.conf
 
