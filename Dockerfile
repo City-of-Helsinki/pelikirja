@@ -1,6 +1,8 @@
 FROM wordpress:php7.4-apache
 LABEL maintainer "Joonas Tikkanen <joonas.tikkanen@ambientia.fi>"
 
+ENV COMPOSER_HOME=/var/www/html
+
 RUN apt-get update && \
     apt-get -y install libfreetype6 libfreetype6-dev wget unzip default-mysql-client less
 
