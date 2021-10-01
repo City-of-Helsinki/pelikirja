@@ -34,7 +34,7 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "extra": {
-      "wordpress-install-dir": "/var/www/html",
+      "wordpress-install-dir": "/usr/src/wordpress",
       "installer-paths": {
         "wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
         "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
