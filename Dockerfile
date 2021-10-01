@@ -28,4 +28,14 @@ VOLUME /var/www/html/wp-content/uploads
 # Install wp cli
 RUN wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod +x wp-cli.phar && mv wp-cli.phar /usr/local/bin/wp
 
+<<<<<<< HEAD
+=======
+WORKDIR /usr/src/wordpress
+USER www-data
+ENV COMPOSER_HOME=/usr/src/wordpress
+RUN composer update && ls -lsa /usr/src/wordpress/wp-content/plugins 
+USER root
+RUN chown -R www-data:www-data /usr/src/wordpress && ls -lsa /usr/src/wordpress/wp-content/plugins
+WORKDIR /var/www/html
+>>>>>>> refs/remotes/origin/main
 EXPOSE 8080
