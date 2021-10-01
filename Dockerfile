@@ -20,6 +20,7 @@ RUN wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.ph
 
 WORKDIR /usr/src/wordpress
 ENV COMPOSER_HOME=/usr/src/wordpress
-RUN composer update
+RUN composer update && ls -lsa /usr/src/wordpress/wp-content/plugins /root /var/www/html/wp-content/plugins
 WORKDIR /var/www/html
 EXPOSE 8080
+ENTRYPOINT ["bash", "-x", "docker-entrypoint.sh"]
