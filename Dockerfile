@@ -21,7 +21,7 @@ COPY conf/ports.conf /etc/apache2/ports.conf
 # Copy themes and plugins
 COPY wp-content/plugins /usr/src/wordpress/wp-content/plugins
 COPY wp-content/themes /usr/src/wordpress/wp-content/themes
-COPY --from=build /var/www/html/wp-content /var/www/html/wp-content
+COPY --from=build /var/www/html/wp-content /usr/src/wordpress/wp-content
 
 VOLUME /var/www/html/wp-content/uploads
 
