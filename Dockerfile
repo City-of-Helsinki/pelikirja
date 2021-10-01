@@ -1,11 +1,11 @@
 FROM composer as build
 
 # Install composer
-WORKDIR /var/www/html/wp-content
+WORKDIR /var/www/html
 
 ENV COMPOSER_HOME=/var/www/html
 # Copy and runn composer
-COPY composer.json /var/www/html/wp-content
+COPY composer.json /var/www/html
 RUN composer install --no-scripts --no-autoloader
 RUN composer dump-autoload --optimize
 
