@@ -22,6 +22,7 @@ WORKDIR /usr/src/wordpress
 USER www-data
 ENV COMPOSER_HOME=/usr/src/wordpress
 RUN composer update && ls -lsa /usr/src/wordpress/wp-content/plugins && chown -R www-data:www-data /usr/src/wordpress && ls -lsa /usr/src/wordpress/wp-content/plugins
+USER root
 WORKDIR /var/www/html
 EXPOSE 8080
 ENTRYPOINT ["bash", "-x", "docker-entrypoint.sh"]
