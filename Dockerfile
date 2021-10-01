@@ -22,6 +22,7 @@ COPY conf/ports.conf /etc/apache2/ports.conf
 COPY wp-content/plugins /usr/src/wordpress/wp-content/plugins
 COPY wp-content/themes /usr/src/wordpress/wp-content/themes
 COPY --from=build /var/www/html/wp-content /usr/src/wordpress/wp-content
+COPY docker-entrypoint.sh /usr/local/bin/
 
 VOLUME /var/www/html/wp-content/uploads
 
