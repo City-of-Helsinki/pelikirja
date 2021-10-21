@@ -19,9 +19,12 @@ RUN apt-get update && \
 COPY conf/ports.conf /etc/apache2/ports.conf
 
 # Copy themes and plugins
-COPY --chown=33:33 wp-content/plugins /usr/src/wordpress/wp-content/plugins
-COPY --chown=33:33 wp-content/themes /usr/src/wordpress/wp-content/themes
-COPY --from=build --chown=33:33 /var/www/html/wp-content /usr/src/wordpress/wp-content
+#COPY --from=build --chown=www-data:www-data /var/www/html/wp-content /usr/src/wordpress/wp-content
+#COPY --chown=www-data:www-data wp-content/plugins /usr/src/wordpress/wp-content/plugins
+#COPY --chown=www-data:www-data wp-content/themes /usr/src/wordpress/wp-content/themes
+COPY --from=build --chown=www-data:www-data /var/www/html/wp-content /usr/src/wordpress/wp-content
+COPY --chown=www-data:www-data wp-content/plugins /var/www/html/wp-content/plugins
+COPY --chown=www-data:www-data wp-content/themes /var/www/html/wp-content/themes
 VOLUME /var/www/html/wp-content/uploads
 
 # Install wp cli
