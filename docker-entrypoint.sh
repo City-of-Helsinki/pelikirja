@@ -52,7 +52,8 @@ if [[ "$1" == apache2* ]] || [ "$1" = 'php-fpm' ]; then
 #			targetTarArgs+=( --no-overwrite-dir )
 #		fi
 #		tar "${sourceTarArgs[@]}" . | tar "${targetTarArgs[@]}"
-                cp -r -v /usr/src/wordpress/* /var/www/html/
+                cp -r /usr/src/wordpress/* /var/www/html/
+		chown -R "$user:$group" /var/www/html
 		echo >&2 "Complete! WordPress has been successfully copied to $PWD"
 	fi
 
