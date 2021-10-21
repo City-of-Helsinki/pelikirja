@@ -30,4 +30,5 @@ VOLUME /var/www/html/wp-content/uploads
 RUN wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod +x wp-cli.phar && mv wp-cli.phar /usr/local/bin/wp
 
 EXPOSE 8080
-ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh", "apache2"]
+ENTRYPOINT ["docker-entrypoint.sh"]
+CMD ["apache2-foreground"]
