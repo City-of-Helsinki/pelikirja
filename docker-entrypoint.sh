@@ -32,26 +32,27 @@ if [[ "$1" == apache2* ]] || [ "$1" = 'php-fpm' ]; then
 		fi
 
 		echo >&2 "WordPress not found in $PWD - copying now..."
-		if [ -n "$(find -mindepth 1 -maxdepth 1 -not -name wp-content)" ]; then
-			echo >&2 "WARNING: $PWD is not empty! (copying anyhow)"
-		fi
-		sourceTarArgs=(
-			--create
-			--file -
-			--directory /usr/src/wordpress
-			--owner "$user" --group "$group"
+#		if [ -n "$(find -mindepth 1 -maxdepth 1 -not -name wp-content)" ]; then
+#			echo >&2 "WARNING: $PWD is not empty! (copying anyhow)"
+#		fi
+#		sourceTarArgs=(
+#			--create
+#			--file -
+#			--directory /usr/src/wordpress
+#			--owner "$user" --group "$group"
 #
 #                        --no-overwrite-dir
-		)
-		targetTarArgs=(
-			--extract
-			--file -
-		)
+#		)
+#		targetTarArgs=(
+#			--extract
+#			--file -
+#		)
 #		if [ "$uid" != '0' ]; then
 #			# avoid "tar: .: Cannot utime: Operation not permitted" and "tar: .: Cannot change mode to rwxr-xr-x: Operation not permitted"
 #			targetTarArgs+=( --no-overwrite-dir )
 #		fi
-		tar "${sourceTarArgs[@]}" . | tar "${targetTarArgs[@]}"
+#		tar "${sourceTarArgs[@]}" . | tar "${targetTarArgs[@]}"
+                cp -r -v /usr/src/wordpress/* /var/www/html/
 		echo >&2 "Complete! WordPress has been successfully copied to $PWD"
 	fi
 
