@@ -22,16 +22,11 @@ COPY conf/ports.conf /etc/apache2/ports.conf
 COPY --from=build --chown=www-data:www-data /var/www/html/wp-content /usr/src/wordpress/wp-content
 COPY --chown=www-data:www-data wp-content/plugins /usr/src/wordpress/wp-content/plugins
 COPY --chown=www-data:www-data wp-content/themes /usr/src/wordpress/wp-content/themes
-#COPY --from=build --chown=www-data:www-data /var/www/html/wp-content /usr/src/wordpress/wp-content
-#COPY --chown=www-data:www-data wp-content/plugins /var/www/html/wp-content/plugins
-#COPY --chown=www-data:www-data wp-content/themes /var/www/html/wp-content/themes
 VOLUME /var/www/html/wp-content/uploads
 
 # Install wp cli
 RUN wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod +x wp-cli.phar && mv wp-cli.phar /usr/local/bin/wp
 
-#COPY --chown=www-data:www-data docker-entrypoint.sh /usr/local/bin/
+COPY docker-entrypoint.sh /usr/local/bin/
 
 EXPOSE 8080
-#ENTRYPOINT ["docker-entrypoint.sh"]
-#CMD ["apache2-foreground"]
