@@ -41,7 +41,7 @@ if [[ "$1" == apache2* ]] || [ "$1" = 'php-fpm' ]; then
 			--directory /usr/src/wordpress
 			--owner "$user" --group "$group"
 #
-                        --no-overwrite-dir
+#                        --no-overwrite-dir
 		)
 		targetTarArgs=(
 			--extract
