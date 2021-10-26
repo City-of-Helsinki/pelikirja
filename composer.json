@@ -12,6 +12,9 @@
     ],
     "require": {
       "php": ">=7.4",
+      "johnpbloch/wordpress-core-installer": "^2.0",
+      "johnpbloch/wordpress-core": "^5.8.1",
+      "wp-cli/wp-cli": "^2.5.0",
       "composer/installers": "^1.11",
       "wpackagist-plugin/contact-form-7": ">=5.3",
       "wpackagist-plugin/query-monitor": "^3.7",
@@ -34,7 +37,7 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "extra": {
-      "wordpress-install-dir": "/var/www/html",
+      "wordpress-install-dir": "/opt/app-root/src",
       "installer-paths": {
         "wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
         "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
@@ -49,6 +52,10 @@
       }
     },
     "scripts": {
+      "post-install-cmd": [
+          "php -r \"copy('config/wp-config.php', 'wp-config.php');\"",
+          "php -r \"copy('config/.htaccess', '.htaccess');\""
+      ],
       "test": [
         "phpcs"
       ]
