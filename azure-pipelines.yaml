@@ -14,5 +14,8 @@ resources:
       # project/repository
       name: pelikirja/pelikirja-pipelines
 
+pool:
+  vmImage: ubuntu-latest
+
 extends:
   template: azure-pipelines.yaml@pelikirja-pipelines
