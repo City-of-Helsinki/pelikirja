@@ -52,10 +52,7 @@
       }
     },
     "scripts": {
-      "post-install-cmd": [
-          "php -r \"copy('config/wp-config.php', 'wp-config.php');\"",
-          "php -r \"copy('config/.htaccess', '.htaccess');\""
-      ],
+      "post-install-cmd": [],
       "test": [
         "phpcs"
       ]
